@@ -2,14 +2,12 @@
 
 > 帮助文档：
 >
-> 1. [单目相机成像原理](https://github.com/SHU-FLYMAN/CalibCamera/blob/master/docs/01%20%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86%EF%BC%9A%E5%8D%95%E7%9B%AE%E6%88%90%E5%83%8F%E8%BF%87%E7%A8%8B.md)
-> 2. [程序帮助文档](https://github.com/SHU-FLYMAN/CalibCamera/blob/master/docs/02%20%E5%AE%9E%E8%B7%B5%E9%83%A8%E5%88%86%EF%BC%9A%E5%BC%A0%E6%AD%A3%E5%8F%8B%E6%A0%87%E5%AE%9A%E6%B3%95%20-%20OpenCV%E5%AE%9E%E7%8E%B0.md)
+> 1. [单目相机成像原理.pdf](https://github.com/SHU-FLYMAN/CalibCamera/blob/master/docs/01%20%E7%90%86%E8%AE%BA%E9%83%A8%E5%88%86%EF%BC%9A%E5%8D%95%E7%9B%AE%E6%88%90%E5%83%8F%E8%BF%87%E7%A8%8B.pdf)
+> 2. [程序帮助文档.pdf](https://github.com/SHU-FLYMAN/CalibCamera/blob/master/docs/02%20%E5%AE%9E%E8%B7%B5%E9%83%A8%E5%88%86%EF%BC%9A%E5%BC%A0%E6%AD%A3%E5%8F%8B%E6%A0%87%E5%AE%9A%E6%B3%95%20-%20OpenCV%E5%AE%9E%E7%8E%B0.pdf)
+>
+> 同样提供 `md` 文件，在 `doc` 文件夹中，可以下载下来，用Typora打开即可，
 
 单目相机的标定是所有三维重建算法的基础，所以，大致明白单目相机的成像原理，以及基于OpenCV的标定流程，对于我们后序深入地学习三维重建算法至关重要。 
-
-> 尽管通过这个教程，你不能明白张正友标定法里面具体的细节，但我仍然觉得这个具有重要意义。因为这大概就是做研究的常态，对于某个方法，除非我们要在它的这个方向上做深入研究，否则这些算法中的细节，一来你没有时间去详细了解它，其次，这些细节对你来说其实是“无关紧要”的。
->
-> 我的意思是，比如你做的是双目结构光三维重建融合算法的创新，那么，对于相机标定中详细的算法细节，你就没有必要去了解其中算法非常细节的东西，因为这会浪费你去了解融合算法细节的时间。
 
 相机标定的具体原理比较复杂，但好在OpenCV很多过程都帮我们封装好了，基于张正友标定发的单目相机标定具体步骤如下：
 
@@ -31,7 +29,7 @@
    - `CMakeList.txt`，主要是OpenCV包的路径
    - `main.cpp`，里面标定图片文件夹路径，以及测试图片路径
 
-之后点击运行即可，当然你也可以用Visual studio来运行，因为是Cmake来管理环境变量的，所以迁移较为方便。代码已经在Windows、Ubuntu18.04下测试，能够运行。
+之后点击运行即可（reload cmake project），当然你也可以用Visual studio来运行，因为是Cmake来管理环境变量的，所以迁移较为方便。代码已经在Windows、Ubuntu18.04下测试，能够运行。
 
 <img src="https://flyman-cjb.oss-cn-hangzhou.aliyuncs.com/picgos/20200806162930.png" width="宽度" height="高度" alt="图片名称" align=center>
 
