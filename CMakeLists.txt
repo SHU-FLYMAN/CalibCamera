@@ -8,10 +8,10 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 # 03 添加可执行文件
 add_executable(
-        StereoCalibration main.cpp                             # 主程序 + 配置信息
-        Srcs/Camera.h                   # 相机对象
+        StereoCalibration main.cpp  # 主程序
+        Srcs/Camera.h               # 相机对象
         Srcs/CheckBoard.h           # 标定板对象
-        Srcs/Utils.h                                     # 工具类
+        Srcs/Utils.h                # 工具类
         )
 # 04 链接相应的库
 target_link_libraries(StereoCalibration ${OpenCV_LIBS})
